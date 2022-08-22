@@ -10,6 +10,6 @@ cargo run -bin projector -- --config $(pwd)/conf.json foo
 
 cargo run -bin projector -- --config $(pwd)/conf.json add foo bar 2>/dev/null
 
-# Get 'foo' after building project
+# Get 'foo' after building release (cargo build --release)
 
-./target/debug/projector --config $(pwd)/conf.json --pwd $(pwd) foo
+./target/release/projector --config $(pwd)/conf.json --pwd $(pwd) foo
